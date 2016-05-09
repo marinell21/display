@@ -1,0 +1,230 @@
+@import (less) "normalize.css";
+@import (less) "layout.css";
+
+@font-face {
+	font-family: 'Novecent';
+	src: url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.eot');
+	src: url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.woff2') format('woff2'),
+	url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.woff') format('woff'),
+	url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.ttf') format('truetype'),
+	url('../fonts/Novecent/Novecentosanswide-DemiBold-webfont.svg#novecento_sans_widedemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/Helvetica/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+	url('../fonts/Helvetica/helveticaneuecyr-light-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font: 14px/1.57 'Helvetica','Novecent', Arial, sans-serif;
+	color: #737373;
+	background: #fff;
+}
+.ba-button {
+	background: #2ECC71;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 14px;
+	border: none;
+}
+.ba-container {
+	max-width: 960px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ba-header {
+	padding-top: 30px;
+}
+.ba-social {
+	padding-top: 20px;
+	&__link {
+		text-decoration: none;
+		margin-left: 5px;
+		fill: #dadada;
+		transition: fill .3s;
+		&--tw:hover {
+			fill: #00bbf5;
+		}
+		&--fb:hover {
+			fill: #4867AA;
+		}
+		&--rss:hover {
+			fill: #FB7629;
+		}
+		&--pn:hover {
+			fill: #BD081C;
+		}
+		&--gl:hover {
+			fill: #FF3D00;
+		}
+		&--dr:hover {
+			fill: #DD3E7B;
+		}
+	}
+
+}
+.ba-menu {
+	padding: 25px 0;
+	border-top: 1px solid #DADADA;
+	margin-top: 20px;
+	a {
+		text-decoration: none;
+		font-family: 'Novecent';
+		color:  #737373;
+		font-size: 18px;
+		font-weight: 600;
+		transition: color .3s;
+		margin-right: 25px;
+		&:hover {
+			color: #2ecc71;
+		}
+	}
+}
+.slider-section {
+	text-align: center;
+	padding-bottom: 25px;
+}
+.ba-main {
+	background: url(../img/main/container.jpg) 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+	.ba-slider {
+		margin-bottom: 155px;
+		&__slide {
+			position: relative;
+			top: 115px;
+		}
+	}
+}
+.ba-title__main {
+	max-width: 780px;
+	font-family: 'Novecent';
+	color:  #aeadad;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 auto;
+	text-align: center;
+}
+.ba-button--main {
+	margin: 23px 0;
+	&:active {
+		position: relative;
+		top: 1px;
+		outline: none;
+		border: none;
+	}
+}
+.ba-more-info {
+	background-color:  #efefef;
+	font-family: 'Helvetica';
+	color:  #8a8888;
+	font-size: 14px;
+	font-weight: 400;
+	padding: 40px 0 10px;
+	.ba-more-info__img {
+		margin-right: 30px;
+	}
+	p {
+		margin-bottom: 30px;
+	}
+	.ba-more-info__title {
+		margin-top: 0;
+		margin-bottom: 25px;
+		font-family: 'Novecent';
+		color:  #737373;
+		font-size: 26px;
+		font-weight: 600;
+		line-height: 15px;
+	}
+}
+.ba-featured {
+	text-align: center;
+	padding-top: 15px;
+	&__title {
+		font-family: 'Novecent';
+		color:  #8a8888;
+		font-size: 27px;
+		font-weight: 600;
+		margin-bottom: 15px;
+	}
+	&__text {
+		max-width: 720px;
+		margin: 0 auto;
+	}
+}
+.ba-ready {
+	background: #322f2f;
+	color: #fff;
+	padding: 30px 0;
+	&__title {
+		font-family: 'Novecent';
+		color: #efefef;
+		font-size: 24px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	.ba-button--footer {
+		margin-top: 23px;
+		padding: 0 25px;
+		&:active {
+			position: relative;
+			top: 1px;
+			outline: none;
+		}
+	}
+}
+.ba-copyright {
+	padding: 15px 0 10px;
+	background-color:  #efefef;
+	font-family: 'Novecent';
+	color:  #a5a5a5;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	&-firm {
+		text-decoration: none;
+		color: #a5a5a5;
+		transition: color .3s;
+		&:hover {
+			color: #322F2F;
+		}
+	}
+	.ba-footer-nav {
+		margin-top: 10px;
+		a {
+			text-decoration: none;
+			color: #a5a5a5;
+			padding-left: 10px;
+			padding-right: 5px;
+			position: relative;
+			transition: color .3s;
+			&:hover {
+				color: #322F2F;
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				top: 70%;
+				margin-top: -10px;
+				width: 1px;
+				height: 12px;
+				background-color: grey;
+				transform: skew(-15deg);
+			}
+			&:first-child:after {
+				display: none;
+			}
+		}
+	}
+}
+@import "_about.less";
+@import "_work.less";
+@import "_contact.less";

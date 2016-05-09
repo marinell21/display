@@ -1,0 +1,78 @@
+@import (less) "swipebox.css";
+.ba-work {
+	margin-bottom: 30px;
+	a {
+		text-decoration: none;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		&:nth-child(3n+3) {
+			margin-right: 0;
+		}
+		img {
+			display: block;
+		}
+	}
+}
+.ba-work-filter {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	button {
+		border: none;
+		background: none;
+		font-family: 'Novecent';
+		color:  #8a8888;
+		font-size: 18px;
+		font-weight: 600;
+		padding-left: 12px;
+		text-transform: uppercase;
+		position: relative;
+		transition: color .3s;
+		&:hover {
+			color: #2ecc71;
+		}
+		&:active {
+			outline: none;
+			color: #2ecc71;
+			border: none;
+		}
+		&:after {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 63%;
+			margin-top: -10px;
+			width: 2px;
+			height: 13px;
+			background-color: grey;
+			transform: skew(-15deg);
+		}
+		&:first-child:after {
+			display: none;
+		}
+	}
+}
+.ba-work__overlay {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	color: #FFF;
+	background-color: rgba(255, 255, 255, .5);
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s, visibility .3s;
+	& img {
+		margin-left: 100%;
+	}
+}
+.item {
+	position: relative;
+	overflow: hidden;
+}
+.item:hover .ba-work__overlay {
+	visibility: visible;
+	opacity: 1;
+}
